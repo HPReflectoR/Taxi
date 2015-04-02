@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width: 100%;
+    font-family: Arial;
+}
+footer {
+    display: block;
+}
+p {
+    margin: 2px;
+}
+
+body a {
+    color: #df0022;
+}
+
+a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+#maintable, #footertab {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#maincell {
+    width: 70%;
+}
+
+#mainmenu {
+    font-family: Tahoma;
+    font-size: 175%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tahbold24 {
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 200%:
+}
+
+.tah18, .tahbold18  {
+    font-family: Tahoma;
+    font-size: 150%;
+}
+
+.tahbold18{
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.cellspace {
+    padding: 15px;
+
+
+}
+.menu_bord {
+    color: black;
+    text-decoration: none;
+    border-bottom: 3px dashed black;
+}
+.menu_bord:hover {
+    border: none;
+}
+.cellspace:hover {
+    background-image: url(../img/bgrdmm.png);
+    background-size: cover;
+
+}
+
+#avtotype {
+    text-align: left;
+}
+
+#copyright, #buttcall, .poscenter {
+    text-align: center;
+}
+
+#taxicall, #mainmenu {
+    width: 100%;
+    height: 100%;
+}
+
+#taxicall {
+    background-color: #ebebeb;
+    padding: 15px;
+}
+
+#avtotype {
+    margin: 0 0 0 15px;
+}
+
+.bgcoment {
+    background-image: url(../img/backgroundcoment.png);
+    background-size: cover;
+    padding: 10px 10px;
+}
+
+.pay {
+    text-align: center;
+    width: 30%;
+}
+
+.boldstyle {
+    font-family: Arial;
+    font-weight: bold;
+}
+
+ul {
+    list-style-image: url(../img/arrow.png);
+}
+
+article ul {
+    list-style-image: none;
+    list-style-type: disc;
+}
+
+.tah24pt {
+    font-family: Tahoma;
+    font-size: 200%;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.posright {
+    text-align: right;
+    padding-right: 120px;
+}
+
+input[type="text"] {
+    height: 35px;
+    width: 350px;
+    font-family: Arial;
+    font-size: 120%;
+
+}
+
+.about {
+    vertical-align: top;
+    text-align: justify;
+}
+
+option {
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.margleft {
+    padding: 0;
+    margin-left: 20px;
+}
+
+#name {
+    text-transform: capitalize;
+}
+
+.outborder {
+    display: inline;
+    border: 1px solid transparent;
+}
+.outborder:hover {
+    border: 1px dashed black;
+}
+
+#footertab {
+	border: 2px solid #bebebe;
+    border-radius: 20px;
+
+}
+
+.img_chr {
+    padding: 0;
+    margin: 0;
+    width: 16px;
+    height: 17px;
+    display: block;
+    position: relative;
+}
+
+.img_chr input[type="radio"] + span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/check_radio_sheet.png);
+    background-repeat: no-repeat;
+}

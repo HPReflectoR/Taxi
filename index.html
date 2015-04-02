@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+		<link rel="stylesheet" type="text/css" href="CSS/animate.css" />
+		<title> Такси940 </title>
+	</head>
+
+	<body>
+		<table id="maintable"> 
+			<tr> 
+				<td id="headerimg" colspan="2">  <a href="#" > <img class="imgh" src="img/header_2.png" alt="логотип такси" /> </a> </td>
+			</tr>
+			<tr>
+				<td id="maincell"> 
+					<table Id="mainmenu">	
+						<tr>
+							<td class="cellspace animated zoomIn"> <a href="#" class="menu_bord"><span> Такси по городу</span></a> </td>
+							<td class="cellspace animated zoomIn"> <a href="#" class="menu_bord"><span>Такси в аэропорт</span></a> </td>
+							<td class="cellspace animated zoomIn"> <a href="#" class="menu_bord"><span>Такси на вокзал</span> </a> </td>
+						</tr>
+						
+					</table>
+					
+				</td> 
+				<td class="pay" > 
+					 <img src="img/pay.png" alt="способы оплаты" />
+				</td>
+				
+			</tr>
+			<tr>
+				<td rowspan="2"> 
+					<form id="ordertaxi">
+						<table id="taxicall"> <!-- Заказ такси -->
+							<tr>
+								<td colspan="3" class="tah24pt"> Заказ такси </td>
+							</tr>
+							<tr>
+								<td> <label class="boldstyle"> Когда: </label> </td>
+								<td> <input type="date" name="calendar" />
+									<select name="timehour">
+										<option value="1"> 1 </option>
+										<option value="2"> 2 </option>
+										<option value="3"> 3 </option>
+										<option value="4"> 4 </option>
+										<option value="5"> 5 </option>
+										<option value="6"> 6 </option>
+										<option value="7"> 7 </option>
+										<option value="8"> 8 </option>
+										<option value="9"> 9 </option>
+										<option value="10"> 10 </option>
+										<option value="11"> 11 </option>
+										<option value="12"> 12 </option>
+										<option value="13"> 13 </option>
+										<option value="14"> 14 </option>
+										<option value="15"> 15 </option>
+										<option value="16"> 16 </option>
+										<option value="17"> 17 </option>
+										<option value="18"> 18 </option>
+										<option value="19"> 19 </option>
+										<option value="20"> 20 </option>
+										<option value="21"> 21 </option>
+										<option value="22"> 22 </option>
+										<option value="23"> 23 </option>
+										<option value="0"> 0 </option>
+									</select>
+									<select name="timemin">
+										<option value="00"> 0 </option>
+										<option value="5"> 05 </option>
+										<option value="10"> 10 </option>
+										<option value="15"> 15 </option>
+										<option value="20"> 20 </option>
+										<option value="25"> 25 </option>
+										<option value="30"> 30 </option>
+										<option value="35"> 35 </option>
+										<option value="40"> 40 </option>
+										<option value="45"> 45 </option>
+										<option value="50"> 50 </option>
+										<option value="55"> 55 </option>
+									</select>
+								</td>
+								<td rowspan="7">
+									<p> <label class="boldstyle"> Тип автомобиля: </label> </p>
+										<p class="outborder">
+											<input type="radio" name="typeavto" value="1" />  Эконом
+										</p>
+										<br />
+										<p class="outborder"> <input type="radio" name="typeavto" value="0" checked /> Комфорт </p>
+										<br />
+										<p class="outborder"> <input type="radio" name="typeavto" value="2" /> Универсал </p>
+										<br />
+										<br />
+
+									<p> <label class="boldstyle"> Пожелания: </label> </p>
+										<p class="outborder"> <input type="checkbox" /> Детское кресло </p>
+										<br />
+										<p class="outborder"> <input type="checkbox" /> Салон для курящих </p>
+										<br />
+										<p class="outborder"> <input type="checkbox" /> Женское такси </p>
+										<br />
+										<p class="outborder"> <input type="checkbox" /> Большой богажник </p>
+								</td>
+							</tr>
+							<tr>
+								<td> <label for="where" class="boldstyle" > Куда: </label> </td>
+								<td> <input type="text" id="where" placeholder="например, Шлюзовая наб, 4" /> </td>
+
+							</tr>
+							<tr>
+								<td> <label for="from" class="boldstyle" > Откуда: </label> </td>
+								<td> <input type="text" id="from" placeholder="например, Шлюзовая наб, 4" /> </td>
+							</tr>
+							<tr>
+								<td colspan="2" class="posright"> <a href="#"> Сколько это займент времени? </a> </td>
+							</tr>
+							<tr>
+								<td colspan="2"> <label for="name" class="boldstyle" > Представтесь: </label> </td>
+							</tr>
+							<tr>
+								<td></td>
+								<td> <input type="text" id="name" placeholder="Ваше имя" /> </td>
+							</tr>
+							<tr>
+								<td></td>
+								<td> <input type="text" id="telefon" placeholder="Ваш телефон" /> </td>
+							</tr>
+							<tr>
+								<td colspan="2" > </td>
+								<td id="buttcall"> <a href="#"> <img src="img/buttoncall.png" alt="кнопка вызова такси" /> </a> </td>
+							</tr>
+
+						</table>
+					</form>
+				</td>
+				<td id="cellservices"> <p class="tahbold18"> Услуги </p>
+					<ul>
+						<li><a href="#"> Встречи в аэропортах</a> </li>
+						<li><a href="#"> Встречи на вокзалах </a> </li>
+						<li><a href="#"> Аренда авто с водителем </a> </li>
+						<li><a href="#"> Корпоративным клиентам </a> </li>
+					</ul>
+					<br />
+					
+					<p class="tahbold18"> Автомобили </p>
+					<table id="avtotype" >
+						<tr>
+							<td> <img src="img/comfort.png" alt="автомобиль класса-B"> </td>
+							<td> Комфорт </td> 
+						</tr>
+						<tr>
+							<td> <img src="img/bisness.png" alt="автомобиль бизнес-класса"> </td>
+							<td> Бизнес </td>
+						</tr>
+						<tr>
+							<td> <img src="img/f-class.png" alt="автомобиль представительского класса"> </td>
+							<td> Представительский </td>
+						</tr>
+						<tr>
+							<td colspan="2" class="poscenter"> <a href="#"> ..И еще много автомобилей </a> </td>
+						</tr>
+					</table>
+					
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2" class="about"> 
+							<p class="tahbold18"> О нас пишут </p>
+								<br />
+								<p> Обсуждения: Лучший перевозчик</p>
+								<p> На сайте: <a href="#"> Таксофорум.ру </a> </p>
+								<p class="bgcoment"> Лучшее такси в городе. Никто еще не отвозил меня домой так, как это сделал водитель службы Такси940. Потрясающе! Буду пользоваться услугами службы ежедневно, даже если никуда не поеду</p>
+				
+								<p> Обсуждения: Лучший перевозчик</p>
+								<p> На сайте: <a href="#"> Таксофорум.ру </a> </p>
+								<p class="bgcoment"> Лучшее такси в городе. Никто еще не отвозил меня домой так, как это сделал водитель службы Такси940. Потрясающе! Буду пользоваться услугами службы ежедневно, даже если никуда не поеду</p>
+				
+								<p> Обсуждения: Лучший перевозчик</p>
+								<p> На сайте: <a href="#"> Таксофорум.ру </a> </p>
+								<p class="bgcoment"> Лучшее такси в городе. Никто еще не отвозил меня домой так, как это сделал водитель службы Такси940. Потрясающе! Буду пользоваться услугами службы ежедневно, даже если никуда не поеду</p>
+				</td>
+			</tr>
+			<tr>
+				<td> 
+					<p class="tah24pt"> Компания такси940 </p>
+					<article>
+						<ul>
+							<li> Номер #1 в рейтинге московских такси по версии Таксодром </li>
+							<li> Подача машины за 20 минут с момента заказа </li>
+							<li> Автомобили, оборудованые GPS </li>
+							<li> В парке только иномарки комфорт и эконом класса </li>
+						</ul>
+					
+						<br />
+					
+						<p class="tah18"> Простой способ заказать быстрое и недорогое такси: </p>
+						<p> Ваши люди в булочную не ездят. А наши - ездят! Это быстро просто и недорого </p>
+						<ul>
+							<li> Заказ такси в три клика </li>
+							<li> Подача машины за 15 минут </li>
+							<li> опытные водители </li>
+							<li> GPS-навигация </li>
+						</ul>
+					 
+						<p> И другие радости необходимые для поездки в булочную </p>
+						<p>
+							Или просто нет желания ехать в метро - Такси940 понимает вас. И знает что вам нужно: хорошая иномарка с тихим водителем, который знает названый адрес и не задает лишних вопросов
+						</p>
+
+						<br />
+
+						<p>
+							Вчера я был счастлив, чрезмерно счастлив, донельзя счастлив! Вы хоть раз в жизни, упрямица, меня послушались. Вечером, часов в восемь, просыпаюсь (вы знаете, маточка, что я часочек-другой люблю поспать после должности), свечку достал, приготовляю бумаги, чиню перо, вдруг, невзначай, подымаю глаза, -- право, у меня сердце нот так и запрыгало! Так вы-таки поняли, чего мне хотелось, чего сердчишку моему хотелось! Вижу, уголочек занавески у окна вашего загнут и прицеплен к горшку с бальзамином, точнехонько так, как я вам тогда намекал; тут же показалось мне, что и личико ваше мелькнуло у окна, что и вы ко мне из комнатки вашей смотрели, что и вы обо мне думали. И как же мне досадно было, голубчик мой, что миловидного личика-то вашего я не мог разглядеть хорошенько! Вижу, уголочек занавески у окна вашего загнут и прицеплен к горшку с бальзамином, точнехонько так, как я вам тогда намекал; тут же показалось мне, что и личико ваше мелькнуло у окна, что и вы ко мне из комнатки вашей смотрели, что и вы обо мне думали. И как же мне досадно было, голубчик мой, что миловидного личика-то вашего я не мог разглядеть хорошенько! Вижу, уголочек занавески у окна вашего загнут и прицеплен к горшку!
+						</p>
+
+						<br />
+
+						<p>
+							И как же мне досадно было, голубчик мой, что миловидного личика-то вашего я не мог разглядеть хорошенько! Вижу, уголочек занавески у окна вашего загнут и прицеплен к горшку с бальзамином, точнехонько так, как я вам тогда намекал; тут же показалось мне, что и личико ваше мелькнуло у окна, что и вы ко мне из комнатки вашей смотрели, что и вы обо мне думали. И как же мне досадно было, голубчик мой, что миловидного личика-то вашего я не мог разглядеть хорошенько! Вижу, уголочек занавески у окна вашего загнут и прицеплен к горшку!
+						</p>
+						<br />
+						<p>
+							И как же мне досадно было, голубчик мой, что миловидного личика-то вашего я не мог разглядеть хорошенько! Вижу, уголочек занавески у окна вашего загнут и прицеплен к горшку с бальзамином!
+						</p>
+					</article>
+					<br />
+					<br />
+				</td>
+			</tr> 
+		</table>
+		<br />
+	<footer>
+		<table id="footertab">
+			<tr>
+				<td> <img src="img/footerlogo.png" alt="logo" /> </td>
+					<td> 
+						<p class="boldstyle"> Такси в аэропорт </p>
+							<ul class="margleft0">
+								<li> <a href="#"> Шереметьево </a> </li>
+								<li> <a href="#"> Домодедово </a> </li>
+								<li> <a href="#"> Внуково </a> </li>
+							</ul>
+					</td>
+					<td> 
+						<p class="boldstyle" > Дополнительные услуги </p>
+							<ul class="margleft0">
+								<li> <a href="#"> Такси на свадьбу </a> </li>
+								<li> <a href="#"> Ночное такси </a> </li>
+								<li> <a href="#"> Женское такси </a> </li>
+							</ul>
+					</td>
+					<td> 
+						<p class="boldstyle" > Информация </p>
+							<ul class="margleft0">
+								<li> <a href="#"> Варианты оплаты </a> </li>
+								<li> <a href="#"> Расчет стоимости поездки </a> </li>
+								<li> <a href="#"> Как выбрать такси </a> </li>
+							</ul>
+					</td>
+					<td> 
+						<p class="boldstyle" > О компании </p>
+							<ul class="margleft">
+								<li> <a href="#"> Скидки и акции </a> </li>
+								<li> <a href="#"> Расчет стоимости поезки </a> </li>
+								<li> <a href="#"> Диспетчерская служба </a> </li>
+							</ul>
+					</td>
+			</tr>
+		</table>
+			<p id="copyright"> &copy; 2005-2012 Такси940 </p>
+	</footer>
+	</body>
+	
+</html>
